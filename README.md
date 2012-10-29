@@ -12,7 +12,7 @@ Add inspectbang to your Gemfile and run `bundle`:
 
 ```ruby
 group :development do
-  gem 'inspectbang', '~> 1.0.0'
+  gem 'inspectbang', '~> 1.1.0'
 end
 ```
 
