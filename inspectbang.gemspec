@@ -8,6 +8,5 @@ Gem::Specification.new do |s|
   s.description = 'Inspect with a bang!'
   s.summary = 'See description'
   s.files = %w(lib/inspectbang.rb README.md inspectbang.gemspec)
-  s.add_dependency('rails', ['>= 3.0.3'])
   s.require_path = 'lib'
 end
