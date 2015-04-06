@@ -1,5 +1,5 @@
-Inspect with a bang!
-====================
+inspectbang
+===========
 
 
 Easy peasy "puts" style debugging in your browser, for Rails and Sinatra.
@@ -17,12 +17,12 @@ end
 ```
 
 
-Usage
------
+Example usage
+-------------
 
 Use the `Object#inspect!` method to output an HTML safe representation of
-the object in your browser. For example, here's how you would inspect the
-form data that was posted to your Rails application:
+the object in your browser. For example, you could inspect form data posted
+to your Rails application like this:
 
 ```ruby
 class SomeController < ApplicationController
@@ -32,7 +32,7 @@ class SomeController < ApplicationController
 end
 ```
 
-And here's how you would inspect the request in a Sinatra application:
+Or you could inspect the request in a Sinatra application like this:
 
 ```ruby
 get '/' do
