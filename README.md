@@ -1,24 +1,21 @@
-inspectbang
-===========
+# inspectbang
 
 
 Easy peasy "puts" style debugging in your browser, for Rails and Sinatra.
 
 
-Installation
-------------
+## Installation
 
 Add inspectbang to your Gemfile and run `bundle`:
 
 ```ruby
 group :development do
-  gem 'inspectbang', '~> 1.1.0'
+  gem 'inspectbang'
 end
 ```
 
 
-Example usage
--------------
+## Example usage
 
 Use the `Object#inspect!` method to output an HTML safe representation of
 the object in your browser. For example, you could inspect form data posted
