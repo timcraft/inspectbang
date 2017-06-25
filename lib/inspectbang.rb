@@ -12,8 +12,14 @@ module InspectBang
 
     class Railtie < Rails::Railtie
       initializer 'inspectbang' do |app|
-        ActionController::Base.rescue_from(Exception) do |exception|
-          render :text => CGI.escapeHTML(exception.message)
+        if defined?(ActionController::Rendering::RENDER_FORMATS_IN_PRIORITY) && ActionController::Rendering::RENDER_FORMATS_IN_PRIORITY.include?(:plain)
+          ActionController::Base.rescue_from(Exception) do |exception|
+            render :plain => exception.message
+          end
+        else
+          ActionController::Base.rescue_from(Exception) do |exception|
+            render :text => CGI.escapeHTML(exception.message)
+          end
         end
 
         Object.send(:include, Method)
