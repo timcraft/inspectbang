@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.authors = ['Tim Craft']
   s.email = ['mail@timcraft.com']
-  s.homepage = 'http://github.com/timcraft/inspectbang'
+  s.homepage = 'https://github.com/timcraft/inspectbang'
   s.description = 'Inspect with a bang!'
   s.summary = 'See description'
   s.files = %w(lib/inspectbang.rb LICENSE.txt README.md inspectbang.gemspec)
